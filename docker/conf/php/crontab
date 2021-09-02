@@ -1,0 +1,4 @@
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+*/1 * * * * root /usr/local/bin/php /var/www/html/bin/console app:import-currency-price-pairs BTC USD,JPY,EUR >> /var/log/cron.log 2>&1
